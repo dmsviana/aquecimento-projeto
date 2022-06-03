@@ -46,6 +46,15 @@
         <nomeDoCanal>Netflix</nomeDoCanal>
       </canal>
     </classes.ProgramaDeTV>
+    <classes.ProgramaDeTV>
+      <id>1654225814393</id>
+      <nome>Stranger Things</nome>
+      <tipoDePrograma>SERIE</tipoDePrograma>
+      <diasDaSemana>FRIDAY</diasDaSemana>
+      <canal>
+        <nomeDoCanal>Netflix</nomeDoCanal>
+      </canal>
+    </classes.ProgramaDeTV>
   </todosOsProgramas>
   <todosOsCanais>
     <classes.Canal>
