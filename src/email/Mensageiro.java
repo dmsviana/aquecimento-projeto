@@ -4,10 +4,6 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.MultiPartEmail;
 
-import persistencia.CentralDeInformacoes;
-import persistencia.Persistencia;
-import relatorios.GeradorDeRelatorios;
-
 public class Mensageiro {
 
 	private static String remetente = "myseriespoo@gmail.com";

@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="libs/activation.jar"/>
 	<classpathentry kind="lib" path="libs/javax.mail-1.6.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-email-1.5.jar"/>
+	<classpathentry kind="lib" path="libs/flatlaf-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

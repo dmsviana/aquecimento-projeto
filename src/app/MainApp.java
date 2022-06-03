@@ -1,11 +1,11 @@
 package app;
 
+import java.time.DayOfWeek;
 import java.util.Scanner;
 
 import classes.Canal;
 import classes.ProgramaDeTV;
 import email.Mensageiro;
-import enums.DiasDaSemana;
 import enums.TipoDePrograma;
 import persistencia.CentralDeInformacoes;
 import persistencia.Persistencia;
@@ -44,14 +44,14 @@ public class MainApp {
 				String nome = sc.nextLine();
 				System.out.println("Digite o tipo do programa (serie, continuo, reality show):");
 				String tipo = sc.nextLine().toUpperCase();
-				System.out.println("Digite o dia da semana que é exibido: ");
-				String dia = sc.nextLine().toUpperCase();
+				System.out.println("Digite o dia da semana que é exibido (1 - SEG, 2 - TER, 3 - QUA...): ");
+				int dia = Integer.parseInt(sc.nextLine());
 				System.out.println("Esses são os canais disponiveis: " + central.getTodosOsCanais().toString());
 				System.out.println("Em qual deseja inserir? ");
 				String inserirCanal = sc.nextLine();
 				canal = new Canal();
 				canal.setNomeDoCanal(inserirCanal);
-				ProgramaDeTV programa = new ProgramaDeTV(nome, TipoDePrograma.valueOf(tipo), DiasDaSemana.valueOf(dia),
+				ProgramaDeTV programa = new ProgramaDeTV(nome, TipoDePrograma.valueOf(tipo), DayOfWeek.of(dia),
 						canal);
 				System.out.println(programa.getCanal());
 				if (central.adicionarPrograma(programa)) {

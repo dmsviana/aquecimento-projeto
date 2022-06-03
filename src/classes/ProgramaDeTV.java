@@ -1,16 +1,17 @@
 package classes;
 
-import enums.DiasDaSemana;
+import java.time.DayOfWeek;
+
 import enums.TipoDePrograma;
 
 public class ProgramaDeTV {
 	private long id;
 	private String nome;
 	private TipoDePrograma tipoDePrograma;
-	private DiasDaSemana diasDaSemana;
+	private DayOfWeek diasDaSemana;
 	private Canal canal;
 
-	public ProgramaDeTV(String nome, TipoDePrograma tipoDePrograma, DiasDaSemana diasDaSemana, Canal canal) {
+	public ProgramaDeTV(String nome, TipoDePrograma tipoDePrograma, DayOfWeek diasDaSemana, Canal canal) {
 		this.id = System.currentTimeMillis();
 		this.nome = nome;
 		this.tipoDePrograma = tipoDePrograma;
@@ -34,11 +35,11 @@ public class ProgramaDeTV {
 		this.tipoDePrograma = tipoDePrograma;
 	}
 
-	public DiasDaSemana getDiasDaSemana() {
+	public DayOfWeek getDiasDaSemana() {
 		return diasDaSemana;
 	}
 
-	public void setDiasDaSemana(DiasDaSemana diasDaSemana) {
+	public void setDiasDaSemana(DayOfWeek diasDaSemana) {
 		this.diasDaSemana = diasDaSemana;
 	}
 

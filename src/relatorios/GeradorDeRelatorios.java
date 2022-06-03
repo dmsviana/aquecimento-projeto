@@ -3,6 +3,8 @@ package relatorios;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.Calendar;
 
 import com.itextpdf.text.Document;
@@ -32,6 +34,12 @@ public class GeradorDeRelatorios {
 		
 		Paragraph paragraph = new Paragraph();
 		
+		LocalDate localDate = LocalDate.now();
+		
+		int hoje = DayOfWeek.from(localDate).getValue();
+		
+		
+		
 		try {
 
 			FileOutputStream out;
@@ -47,7 +55,7 @@ public class GeradorDeRelatorios {
 			
 			for (ProgramaDeTV programas : central.getTodosOsProgramas()) {
 				if (programas.getCanal() != null) {
-					if(programas.getDiasDaSemana().getDia() == Calendar.DAY_OF_WEEK) {
+					if(programas.getDiasDaSemana().getValue() == hoje) {
 						dados += "\n" + programas.getNome();
 					}
 				}
@@ -80,7 +88,6 @@ public class GeradorDeRelatorios {
 		Document doc = new Document(PageSize.A4);
 
 		Paragraph paragraphName = new Paragraph(canal.getNomeDoCanal());
-		Paragraph paragraphDay = new Paragraph();
 		try {
 
 			FileOutputStream out;

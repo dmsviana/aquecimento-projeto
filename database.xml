@@ -1,86 +1,55 @@
 <persistencia.CentralDeInformacoes>
+  <todosOsUsuarios/>
   <todosOsProgramas>
     <classes.ProgramaDeTV>
-      <id>1652186907054</id>
-      <nome>BBB</nome>
-      <tipoDePrograma>REALITY</tipoDePrograma>
-      <diasDaSemana>DOMINGO</diasDaSemana>
-      <canal>
-        <nomeDoCanal>Globo</nomeDoCanal>
-        <tipoDoCanal>Tv aberta</tipoDoCanal>
-      </canal>
-    </classes.ProgramaDeTV>
-    <classes.ProgramaDeTV>
-      <id>1652186932881</id>
+      <id>1654222884685</id>
       <nome>Peaky Blinders</nome>
       <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
+      <diasDaSemana>THURSDAY</diasDaSemana>
       <canal>
         <nomeDoCanal>Netflix</nomeDoCanal>
-        <tipoDoCanal>streaming</tipoDoCanal>
       </canal>
     </classes.ProgramaDeTV>
     <classes.ProgramaDeTV>
-      <id>1652187190590</id>
-      <nome>Friends</nome>
+      <id>1654222900058</id>
+      <nome>Breaking Bad</nome>
       <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
+      <diasDaSemana>THURSDAY</diasDaSemana>
       <canal>
-        <nomeDoCanal>GloboPlay</nomeDoCanal>
-        <tipoDoCanal>streaming</tipoDoCanal>
+        <nomeDoCanal>Netflix</nomeDoCanal>
       </canal>
     </classes.ProgramaDeTV>
     <classes.ProgramaDeTV>
-      <id>1652210142311</id>
-      <nome>Champions League</nome>
-      <tipoDePrograma>CONTINUO</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
-      <canal>
-        <nomeDoCanal>HBO Max</nomeDoCanal>
-      </canal>
-    </classes.ProgramaDeTV>
-    <classes.ProgramaDeTV>
-      <id>1652816704946</id>
+      <id>1654222915283</id>
       <nome>Suits</nome>
       <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
-      <canal>
-        <nomeDoCanal>netflix</nomeDoCanal>
-      </canal>
-    </classes.ProgramaDeTV>
-    <classes.ProgramaDeTV>
-      <id>1652852589387</id>
-      <nome>Um maluco no pedaco</nome>
-      <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
-      <canal>
-        <nomeDoCanal>netflix</nomeDoCanal>
-      </canal>
-    </classes.ProgramaDeTV>
-    <classes.ProgramaDeTV>
-      <id>1652852613318</id>
-      <nome>Better Call Saul</nome>
-      <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
+      <diasDaSemana>THURSDAY</diasDaSemana>
       <canal>
         <nomeDoCanal>Netflix</nomeDoCanal>
       </canal>
     </classes.ProgramaDeTV>
     <classes.ProgramaDeTV>
-      <id>1652852641060</id>
-      <nome>Narcos</nome>
+      <id>1654224225537</id>
+      <nome>Bandidos na TV</nome>
       <tipoDePrograma>SERIE</tipoDePrograma>
-      <diasDaSemana>SABADO</diasDaSemana>
+      <diasDaSemana>MONDAY</diasDaSemana>
+      <canal>
+        <nomeDoCanal>Netflix</nomeDoCanal>
+      </canal>
+    </classes.ProgramaDeTV>
+    <classes.ProgramaDeTV>
+      <id>1654224300527</id>
+      <nome>Sherlock</nome>
+      <tipoDePrograma>SERIE</tipoDePrograma>
+      <diasDaSemana>THURSDAY</diasDaSemana>
       <canal>
         <nomeDoCanal>Netflix</nomeDoCanal>
       </canal>
     </classes.ProgramaDeTV>
   </todosOsProgramas>
   <todosOsCanais>
-    <classes.Canal reference="../../todosOsProgramas/classes.ProgramaDeTV/canal"/>
-    <classes.Canal reference="../../todosOsProgramas/classes.ProgramaDeTV[2]/canal"/>
     <classes.Canal>
-      <nomeDoCanal>HBO Max</nomeDoCanal>
+      <nomeDoCanal>Netflix</nomeDoCanal>
       <tipoDoCanal>streaming</tipoDoCanal>
     </classes.Canal>
   </todosOsCanais>
